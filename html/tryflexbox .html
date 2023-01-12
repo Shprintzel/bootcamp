@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.flex-container {
+  display: -webkit-flex;
+  display: flex;  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.flex-container > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.main {
+  text-align: left;
+  background: rgb(247, 243, 248);
+}
+
+.header {background: rgb(70, 130, 180);}
+
+.footer {background-color: none;}
+
+
+@media all and (min-width: 768px) {
+  
+  .main    { flex: 3 0px; }
+  .aside1 { order: 1; } 
+  .main    { order: 2; }
+  
+  .footer  { order: 4; }
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <header class="header">Header</header>
+  <aside class="aside aside1">Aside 1</aside>
+  <article class="main">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ex turpis. Cras luctus nibh lectus, in ullamcorper ex tempor eleifend. Nulla bibendum, eros a consequat vestibulum, orci massa fermentum quam, sed commodo nunc ex vitae nisl. Aliquam ullamcorper interdum est nec tincidunt.</p>
+  </article>
+  <aside class="aside aside2">Aside 2</aside>
+  <footer class="footer">Footer</footer>
+</div>
+
+</body>
+<ul class="nav">
+    <link>
+        <a href="index.php"><span>Home</span></a>
+    </link>
+    <link>
+        <a href="calendar.php"><span>Calendar</span></a>
+    </link>
+    <link>
+        <a href="ministries.php"><span>Ministries</span></a>
+    </link>
+    <link>
+        <a href="testimonials.php"><span>Testimonials</span></a>
+    </link>
+    <link>
+        <a href="contactus.php"><span>Contact Us</span></a>
+    </link>
+</ul>
+<div>
+    <table style="margin-left: auto; margin-right: auto;">
+    <tr>
+        <td rowspan="3"><img src="http://www.freewill-baptistchurch.com/assets/images/ministries-pastor.jpg" alt="pic of pastor" style="width: 300px;" /></td>
+        <td style="color: rgb(70, 130, 180); font-size: 200%; vertical-align: bottom; padding-left: 20px"><b>Free Huell Babineaux!</b></td>
+    </tr> 
+    <tr>
+        <td style="vertical-align: top; padding-left: 20px;">Our Huell needs us now more than ever! Please<br> click the link below to find out how you can help!<td>
+    </tr>
+    <tr>
+        <td style="color: rgb(255, 0, 216); font-size: 200%;vertical-align: top;padding-left: 20px"><b><u><a href="http://www.freewill-baptistchurch.com/testimonials.php" style="color: inherit">Save Huel Now!</a></u></b></td>
+    </tr>
+    </table>
+</div>
+</html>

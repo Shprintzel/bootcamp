@@ -1,0 +1,8 @@
+title Network Routine
+>facebook
+ping facebook.com
+>ping test complete
+>saving your network info...
+ipconfig network 
+type nul > network.doc
+pause 
